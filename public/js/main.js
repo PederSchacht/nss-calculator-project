@@ -27,7 +27,7 @@ while(operator != 'q'){
     case 'p':
       result = pow(x,y);
       break;
-    case 'f';
+    case 'f':
       result = fac(x,y);
   }
 

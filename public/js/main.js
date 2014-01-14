@@ -1,6 +1,6 @@
 console.log('welcome to your calc app');
 
-var menu = 'Add (+) , Subtract (-) , Multiply (*) , Divide (/), Power (p), Quit (q)';
+var menu = 'Add (+) , Subtract (-) , Multiply (*) , Divide (/), Power (p), Factorial (f), Quit (q)';
 var operator = prompt(menu);
 
 while(operator != 'q'){
@@ -26,6 +26,9 @@ while(operator != 'q'){
       break;
     case 'p':
       result = pow(x,y);
+      break;
+    case 'f';
+      result = fac(x,y);
   }
 
     console.log(result);
@@ -57,5 +60,13 @@ function pow(base,exp){
     result *= base;
 
   return result;
+}
+
+function fac(n){
+  z = 1;
+  for(i=1;i<=n;i++){
+    z = z*i;
+  }
+  return z;
 }
 
